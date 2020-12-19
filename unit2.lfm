@@ -1,0 +1,225 @@
+object Form3: TForm3
+  Left = 381
+  Height = 781
+  Top = 154
+  Width = 1317
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = 'Stat'
+  ClientHeight = 781
+  ClientWidth = 1317
+  OnCreate = FormCreate
+  LCLVersion = '2.0.2.0'
+  object Edit1: TEdit
+    Left = 10
+    Height = 28
+    Top = 10
+    Width = 222
+    TabOrder = 0
+    Text = '3.037074000000000000000000'
+  end
+  object Edit2: TEdit
+    Left = 8
+    Height = 28
+    Top = 48
+    Width = 224
+    TabOrder = 1
+    Text = '0.00001856000000000'
+  end
+  object Label1: TLabel
+    Left = 240
+    Height = 17
+    Top = 16
+    Width = 7
+    Caption = 'a'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 239
+    Height = 17
+    Top = 59
+    Width = 8
+    Caption = 'b'
+    ParentColor = False
+  end
+  object Edit3: TEdit
+    Left = 10
+    Height = 28
+    Top = 88
+    Width = 222
+    TabOrder = 2
+    Text = '79.05694150420948330'
+  end
+  object Label3: TLabel
+    Left = 239
+    Height = 17
+    Top = 99
+    Width = 15
+    Caption = 's2'
+    ParentColor = False
+  end
+  object Button1: TButton
+    Left = 264
+    Height = 25
+    Top = 59
+    Width = 75
+    Caption = 'Load'
+    OnClick = Button1Click
+    TabOrder = 3
+  end
+  object RadioButton1: TRadioButton
+    Left = 10
+    Height = 23
+    Top = 136
+    Width = 87
+    Caption = 'Gaussiana'
+    TabOrder = 4
+  end
+  object RadioButton2: TRadioButton
+    Left = 136
+    Height = 23
+    Top = 136
+    Width = 102
+    Caption = 'Regressione'
+    Checked = True
+    TabOrder = 5
+    TabStop = True
+  end
+  object Chart1: TChart
+    Left = 8
+    Height = 600
+    Top = 176
+    Width = 1309
+    AxisList = <    
+      item
+        Intervals.Count = 8
+        Intervals.MinLength = 1
+        Marks.LabelBrush.Style = bsClear
+        Minors = <>
+        Range.Max = 50
+        Range.UseMax = True
+        Range.UseMin = True
+        Title.LabelFont.Orientation = 900
+        Title.LabelBrush.Style = bsClear
+      end    
+      item
+        Intervals.Count = 8
+        Intervals.MaxLength = 3
+        Intervals.MinLength = 3
+        Intervals.Options = [aipUseCount]
+        Intervals.Tolerance = 10
+        Alignment = calBottom
+        Marks.LabelBrush.Style = bsClear
+        Minors = <>
+        Range.Max = 24
+        Range.UseMax = True
+        Range.UseMin = True
+        Title.LabelBrush.Style = bsClear
+      end>
+    Extent.UseXMax = True
+    Extent.UseXMin = True
+    Extent.UseYMax = True
+    Extent.UseYMin = True
+    Extent.XMax = 24
+    Extent.YMax = 20
+    Foot.Brush.Color = clBtnFace
+    Foot.Font.Color = clBlue
+    Legend.Alignment = laBottomCenter
+    Legend.Visible = True
+    Title.Brush.Color = clBtnFace
+    Title.Font.Color = clBlue
+    Title.Text.Strings = (
+      'TAChart'
+    )
+    object Chart1BarSeries1: TBarSeries
+      BarBrush.Color = clRed
+    end
+  end
+  object Edit4: TEdit
+    Left = 352
+    Height = 28
+    Top = 72
+    Width = 222
+    TabOrder = 7
+    Text = '24'
+  end
+  object Edit5: TEdit
+    Left = 352
+    Height = 28
+    Top = 104
+    Width = 222
+    TabOrder = 8
+    Text = '23.5'
+  end
+  object Button2: TButton
+    Left = 256
+    Height = 27
+    Top = 132
+    Width = 81
+    Caption = 'Button2'
+    OnClick = Button2Click
+    TabOrder = 9
+  end
+  object Edit6: TEdit
+    Left = 352
+    Height = 28
+    Top = 136
+    Width = 222
+    TabOrder = 10
+    Text = '8'
+  end
+  object Edit7: TEdit
+    Left = 352
+    Height = 28
+    Top = 40
+    Width = 222
+    TabOrder = 11
+    Text = '0.5'
+  end
+  object Edit8: TEdit
+    Left = 352
+    Height = 28
+    Top = 8
+    Width = 222
+    TabOrder = 12
+    Text = '0.5'
+  end
+  object Chart2: TChart
+    Left = 10
+    Height = 600
+    Top = 176
+    Width = 1307
+    AxisList = <    
+      item
+        Marks.LabelBrush.Style = bsClear
+        Minors = <>
+        Title.LabelFont.Orientation = 900
+        Title.LabelBrush.Style = bsClear
+      end    
+      item
+        Alignment = calBottom
+        Marks.LabelBrush.Style = bsClear
+        Minors = <>
+        Title.LabelBrush.Style = bsClear
+      end>
+    Foot.Brush.Color = clBtnFace
+    Foot.Font.Color = clBlue
+    Legend.Alignment = laBottomCenter
+    Legend.Visible = True
+    Title.Brush.Color = clBtnFace
+    Title.Font.Color = clBlue
+    Title.Text.Strings = (
+      'TAChart'
+    )
+  end
+  object ListBox1: TListBox
+    Left = 584
+    Height = 168
+    Top = 8
+    Width = 728
+    ItemHeight = 0
+    ScrollWidth = 726
+    TabOrder = 14
+    TopIndex = -1
+  end
+end
